@@ -1,0 +1,13 @@
+<h1>Supplier#index</h1>
+<table border="5px" cellpadding="5px" cellspacing="5px">
+	<tr>
+		<td>Supplier Name</td>
+		<td>View Account Number</td>
+	</tr>
+	<tr>
+		<% @suppliers.each do |s|%>
+		<td><%= s.name%></td>
+		<td><%= link_to "View Account Number",supplier_accounts_path(s.id)%></td>
+	</tr>
+	<%end%>
+</table>

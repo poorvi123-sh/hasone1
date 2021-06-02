@@ -1,0 +1,10 @@
+<h1>Accounts#index</h1>
+<table border="5px" cellpadding="5px " cellspacing="5px">
+	<tr>
+		<td>Account Number</td>
+	</tr>
+	<tr>
+		<td><%= @account&.account_number%></td>
+	</tr>
+</table>
+<%= link_to "Add new Account", new_supplier_account_path%>

@@ -1,0 +1,9 @@
+<h1>Accounts#New</h1>
+<%= form_for [@supplier,@account] do |f|%>
+<%= f.label 'Account Number'%>
+<%= f.text_field :account_number%>
+<br><br>
+<%= f.hidden_field :supplier_id%>
+<br><br>
+<%= f.submit%>
+	<%end%>
